@@ -1,0 +1,45 @@
+<input id="input">
+<button onclick="adding()">Add</button>
+<ul id="list-content">
+    <li>hello
+    <button onclick="deleteiteam(event)">Delete</button>
+    </li>
+</ul>
+
+<script>
+ 
+    var ul=document.getElementById("list-content")
+    var input=document.getElementById("input")
+    function adding(){
+    var listiteam=document.createElement("li")
+    listiteam.innerHTML=input.value +"<button onclick='deleteiteam(event)'>Delete</button>"
+    ul.append(listiteam)
+ }
+ function deleteiteam(event){
+    event.target.parentElement.remove()
+ }
+
+</script>
+
+
+
+
+
+
+
+<button onclick="print()">ADD
+</button>
+<div id="one"></div>
+<script>
+ var one=document.getElementById("one")
+ function print(){
+    var list=document.createElement("h1")
+      list.textContent="hello"
+      one.append(list)
+    
+ }
+</script>
+
+for(int i=0;i<nums.length();i++){
+    console.log(nums[i])
+}
